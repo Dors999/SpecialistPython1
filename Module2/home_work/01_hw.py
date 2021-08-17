@@ -5,4 +5,10 @@
 # Формат выходных данных
 # Выведите «YES», если можно отломить от шоколадки ровно k долек, и «NO» иначе.
 
-# TODO: your code here
+n=int(input("Vvedite n:"))
+m=int(input("Vvedite m:"))
+k=int(input("Vvedite k:"))
+if n*m%k==0:
+    print("YES")
+else:
+    print("NO")
