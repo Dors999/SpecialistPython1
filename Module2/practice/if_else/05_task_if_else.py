@@ -3,4 +3,13 @@
 # Формат входных данных: дано целое число m (1 ≤ m ≤ 12).
 # Формат выходных данных: требуется вывести название времени года
 
-# TODO: your code here
+m = int(input('Vvedite chislo: '))  # Считываем вещественное число
+
+if 1<=m<=2 or m>11:
+    print("Zima")
+elif 2<m<=5:
+    print("Vesna")
+elif 5<m<=8:
+    print("Leto")
+else:
+    print("Osen")
