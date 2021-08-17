@@ -28,4 +28,9 @@
 # 19 189.81 Rub.
 # 20 199.80 Rub.
 
-# TODO: your code here
+x=float(input("Vvedite x:"))
+a=1
+while a<=20:
+    print(a,x*a," Rub.")
+    a+=1
+    
