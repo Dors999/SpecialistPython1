@@ -4,4 +4,11 @@
 # а если делится на 3 и на 5 - вывести “Foobar”.
 # Для всех остальных случаев не выводить ничего.
 
-# TODO: your code here
+n = int(input('Vvedite chislo: '))  # Считываем вещественное число
+
+if n%3==0 and n%5==0:
+    print("Foobar")
+elif n%3==0:
+    print("Foo")
+elif n%5==0:
+    print("Bar")
