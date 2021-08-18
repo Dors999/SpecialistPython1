@@ -8,5 +8,15 @@
 # 12
 # 123
 # 1234
-
-# TODO: your code here
+k_1=1
+k_2=1
+s=""
+n=int(input("Vvedite n: "))
+while k_1<=n:
+    while k_2<=k_1:
+        s=s+str(k_2)
+        k_2+=1
+    print(s)
+    s=""
+    k_1+=1
+    k_2=1
