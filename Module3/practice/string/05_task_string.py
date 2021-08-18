@@ -3,6 +3,13 @@
 # Строка называется «перевертышем», если читается одинаково слева направо и справа налево.
 
 # Пример строки перевертыша: "И темен город. Мороз узором дорог не мети."
-
-# TODO: your code here
-
+text = input("text: ")
+text=text.replace(".","")
+text=text.replace(",","")
+text=text.replace(" ","")
+text=text.lower()
+new_text=text[::-1]
+if text==new_text:
+    print("YES")
+else:
+    print("NO")
