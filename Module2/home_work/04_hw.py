@@ -14,3 +14,18 @@
 #    #
 #    #
 ######
+a=int(input("Vvedite a:"))
+k_1=1
+k_2=1
+temp=""
+while k_1<=a:
+    while k_2<=a:
+        if k_1==1 or k_1==a or k_2==1 or k_2==a or k_1==k_2 or k_2==(a-k_1+1):
+            temp=temp+"#  "
+        else:
+            temp=temp+"   "
+        k_2+=1
+    print(temp)
+    k_1+=1
+    k_2=1
+    temp=""
