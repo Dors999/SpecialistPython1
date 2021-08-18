@@ -17,4 +17,18 @@
 # #
 
 
-# TODO: your code here
+k_1=1
+k_2=1
+s=""
+n=int(input("Vvedite n: "))
+while k_1<=n:
+    while k_2<=n:
+        if k_1==k_2 or (k_2==n-k_1+1) :
+            s=s+"#"
+        else:
+            s=s+" "
+        k_2+=1
+    print(s)
+    s=""
+    k_1+=1
+    k_2=1
