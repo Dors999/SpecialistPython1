@@ -2,3 +2,14 @@
 # Найдите количество элементов, которые встречаются во всех трех кортежах.
 
 # TODO: your code here
+tup1 = (2, 4, -6, 8, 9, 12)
+tup2 = (2, 5, -6, 8, 7, 13)
+tup3 = (2, 4, -6, 9, 8, 15)
+num=0
+for i_1 in tup1:
+    for i_2 in tup2:
+        if i_1==i_2:
+            for i_3 in tup3:
+                if i_1==i_3:
+                    num+=1
+print("Kolichestvo=",num)
