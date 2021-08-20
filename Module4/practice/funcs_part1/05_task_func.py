@@ -5,5 +5,23 @@
 
 # TODO: your code here
 
+def storona(p1,p2):
+    s=((p1[0] -p2[0] ) ** 2 + (p2[1] - p1[1]) ** 2) ** 0.5
+    return s
+def can_triangle(p1, p2, p3):
+    # TODO: your code here
+    s1 = storona(p1,p2)
+    s2 = storona(p2,p3)
+    s3 = storona(p1,p3)
+    if (s1+s2!=s3) and (s1+s3!=s2) and (s3+s2!=s1):
+        P=s1+s2+s3
+        p=P/2
+        s=(p*(p-s1)*(p-s2)*(p-s3))**0.5
+        print("P=",P," S=",s)
+    else:
+        return False
 
-# Не забудьте протестировать вашу функцию
+
+
+# Пример вызова функции
+can_triangle((10, 12), (14, 18), (12, 12))
