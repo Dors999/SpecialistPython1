@@ -4,4 +4,13 @@
 #  Пример палиндрома: 12321
 
 def palindrome(number):
-    pass
+    print(number)
+    n1=number
+    n2=0
+    a=0
+    while n1//1>0:
+        n2=n2*10 +n1%10
+        n1=n1//10
+        a+=1
+    return n2==number
+print(palindrome(123321))
