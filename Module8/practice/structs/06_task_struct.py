@@ -8,3 +8,10 @@
 # 4. Профессия
 # 5. Зарплата
 # Примечание: Данные сгенерированных сотрудников могут повторяться
+import random
+
+name=["Alex","Mihail","Sergey","Ruslan"]
+fam=["Galp","Dors","Podolsk","Kamyshnikov","Ohota"]
+prof=["IT","stroitel","montagnik","rukovoditel"]
+for _ in range(100):
+    print(f"1. {random.choice(name)} \n2. {random.choice(fam)} \n3. {random.randint(18,60)} \n4. {random.choice(prof)} \n5. {random.randint(18,60)} \n")
