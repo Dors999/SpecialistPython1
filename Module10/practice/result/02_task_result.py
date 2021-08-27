@@ -6,3 +6,12 @@
 # Формат выходных данных:
 # Выведите, во сколько раз отрезок AB больше, чем отрезок CD. Ответ введите с точностью до 6-ти знаков после запятой.
 
+a=int(input("Vvedite A="))
+b=int(input("Vvedite B="))
+c=int(input("Vvedite C="))
+d=int(input("Vvedite D="))
+
+side_AB = abs(b-a)
+side_CD = abs(d-c)
+
+print(f"Otrezok AB > CD v {round(side_AB/side_CD,6)} raz")
